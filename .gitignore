@@ -1,0 +1,29 @@
+# IntelliJ / JetBrains IDE files
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Docker / local env
+.env
+.env.*
+!.env.example
+
+# Java / Maven
+target/
+*.class
+
+# Node / Nuxt
+node_modules/
+.nuxt/
+.output/
+dist/
+
+# Ollama / local data
+ollama_data/
+postgres_data/
