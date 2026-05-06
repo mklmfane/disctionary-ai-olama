@@ -20,7 +20,7 @@ services:
       NVIDIA_VISIBLE_DEVICES: all
       NVIDIA_DRIVER_CAPABILITIES: compute,utility
 
-      OLLAMA_MODEL: "llama3.2:1b"
+      OLLAMA_MODEL: "qwen2.5:1.5b"
       OLLAMA_HOST: "0.0.0.0:11434"
       OLLAMA_NUM_PARALLEL: "1"
       OLLAMA_MAX_LOADED_MODELS: "1"
@@ -84,7 +84,7 @@ services:
       JAVA_TOOL_OPTIONS: >-
         -Dopenai.endpoint=http://ollama:11434/v1
         -Dopenai.token=ollama
-        -Dopenai.model=llama3.2:1b
+        -Dopenai.model=qwen2.5:1.5b
         -Djavax.sql.DataSource.postgres.dataSourceClassName=org.postgresql.ds.PGSimpleDataSource
         -Djavax.sql.DataSource.postgres.dataSource.url=jdbc:postgresql://postgres:5432/postgres
         -Djavax.sql.DataSource.postgres.dataSource.user=postgres
