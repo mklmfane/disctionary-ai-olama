@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
 
-    image: local-ollama:llama3-2-1b
+    image: local-ollama:qwen2-5-1-5b
     container_name: ollama
     restart: unless-stopped
 
@@ -77,10 +77,6 @@ services:
       - "8080:8080"
 
     environment:
-      OPENAI_ENDPOINT: "http://ollama:11434/v1"
-      OPENAI_TOKEN: "ollama"
-      OPENAI_MODEL: "llama3.2:1b"
-
       JAVA_TOOL_OPTIONS: >-
         -Dopenai.endpoint=http://ollama:11434/v1
         -Dopenai.token=ollama
